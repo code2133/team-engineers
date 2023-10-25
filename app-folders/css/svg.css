@@ -1,0 +1,85 @@
+.shester_main{
+  transition: all .3s ease;
+}
+.shester{
+  transform-origin:50% 50%;
+  transform-box: fill-box;
+  transition: all .3s ease;
+}
+.shester_main:hover .shester{
+  transform: rotate(90deg) scale(1.05);
+}
+
+.smoke_svg{
+  transform-origin:50% 50%;
+  transform-box: fill-box;
+  transition: all .3s ease;
+}
+.shester_main:hover .smoke_svg{
+  transform: rotate(-5deg) scale(1.05) translateY(-2px);
+}
+
+@keyframes anim1 {
+  0% {transform: translateX(0px) translateY(0px);}
+  100% {transform: translateX(19px) translateY(40.5px);}
+}
+@keyframes anim2 {
+  0% {transform: translateX(0px) translateY(0px);}
+  100% {transform: translateX(19px) translateY(-40.5px);}
+}
+@keyframes anim3 {
+  0% {transform: translateX(0px) translateY(0px);}
+  100% {transform: translateX(-38.5px) translateY(0px);}
+}
+
+.svg_boxes:hover .svg_box1{
+  animation: anim1 .3s ease;
+  animation-fill-mode: forwards;
+}
+.svg_boxes:hover .svg_box2{
+  animation: anim2 .3s ease;
+  animation-fill-mode: forwards;
+}
+.svg_boxes:hover .svg_box3{
+  animation: anim3 .3s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim2-1 {
+  0% {transform: translateX(0px) translateY(0px);}
+  100% {transform: translateX(30px) translateY(50px);}
+}
+@keyframes anim2-2 {
+  0% {transform: translateX(0px) translateY(0px);}
+  100% {transform: translateX(30px) translateY(-50px);}
+}
+@keyframes anim2-3 {
+  0% {transform: translateX(0px) translateY(0px);}
+  100% {transform: translateX(-60px) translateY(0px);}
+}
+
+.svg_boxes2:hover .svg_box2-1{
+  animation: anim2-1 .3s ease;
+  animation-fill-mode: forwards;
+}
+.svg_boxes2:hover .svg_box2-2{
+  animation: anim2-2 .3s ease;
+  animation-fill-mode: forwards;
+}
+.svg_boxes2:hover .svg_box2-3{
+  animation: anim2-3 .3s ease;
+  animation-fill-mode: forwards;
+}
+
+.shester_main2{
+  transition: all .3s ease;
+}
+.shester2{
+  transform-origin:50% 50%;
+  transform-box: fill-box;
+  transition: all .3s ease;
+}
+.shester_main2:hover .shester2{
+  transform: rotate(90deg) scale(1.05);
+}
+
